@@ -1,0 +1,110 @@
+.container{
+    width: 25%;
+    padding: 15px;
+}
+
+.menu{
+    padding: 10px 15px;
+    border: 1px solid rgba(0,0,0,.3);
+    color: #f4a142;
+    font-weight: 700;
+    cursor: pointer;
+    height: 400px;
+    overflow: auto;
+    position: relative;
+}
+
+.children{
+    border-left: 1px solid rgba(0,0,0,.2);
+    max-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s;
+    padding-left: 25px;
+}
+
+.menu:hover > .children{
+    max-height: 5000px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu > .fixed-label{
+    visibility: hidden;
+}
+
+.menu > .fixed-label.fix-entire{
+    visibility: visible;
+}
+
+.menu:hover > .fixed-label{
+    visibility: visible;
+}
+
+.child{
+    color: #72a2ea;
+}
+
+.menu.child{
+    color: #f4a142;
+    font-weight: 700;
+    height: auto;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+
+.fixed-menu, .fixed-section {
+    visibility: hidden;
+}
+
+.fixed-label{
+    z-index: 1;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    margin-right: 5px;
+    color: #696d6b;
+    font-weight: 400;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.children{
+    padding-bottom: 10px;
+}
+
+
+.fixed-menu:checked ~ .menu.child > .children{
+    max-height: 5000px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.fixed-menu:checked ~ .menu.child > .children .children{
+    max-height: 5000px;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.fixed-section:checked ~ .fixed-label, .fixed-menu:checked ~ .fixed-label{
+    font-weight: 700;
+}
+
+.fixed-section:checked ~ .children{
+    max-height: 5000px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.fixed-section:checked ~ .children .children{
+    max-height: 5000px;
+    visibility: visible;
+    opacity: 1;
+}
+
+

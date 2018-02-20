@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" ng-app="heroApp">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+</head>
+<body>
+
+<div ng-controller="MainCtrl as ctrl">
+   <b>Hero is {{ctrl.hero}}</b><br>
+   <hero-detail hero="ctrl.hero"></hero-detail>
+</div>
+
+
+<div class="container">
+
+   <div class="menu">
+      <input type="checkbox" class="fixed-menu" id="fix-entire-menu" checked>
+      <label for="fix-entire-menu" class="fixed-label fix-entire">Fix Entire Menu</label>
+      <div class="menu child"> Section
+
+         <input type="checkbox" class="fixed-section" id="fixed">
+         <label for="fixed" class="fixed-label">Fix Section</label>
+
+         <div class="children">
+            <div class="menu child">Child1
+               <div class="children">
+                  <div class="child">Child1</div>
+                  <div class="child">Child2</div>
+                  <div class="child">Child1</div>
+                  <div class="child">Child2</div>
+                  <div class="child">Child1</div>
+                  <div class="child">Child2</div>
+                  <div class="child">Child1</div>
+                  <div class="child">Child2</div>
+                  <div class="menu child">Child3
+
+                     <div class="children">
+                        <div class="child">Child1</div>
+                        <div class="child">Child2</div>
+                        <div class="child">Child1</div>
+                        <div class="child">Child2</div>
+                        <div class="child">Child1</div>
+                        <div class="child">Child2</div>
+                        <div class="child">Child1</div>
+                        <div class="child">Child2</div>
+                        <div class="child">Child1</div>
+                        <div class="child">Child2</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="menu child"> Menu
+         <input type="checkbox" class="fixed-section" id="fixed2">
+         <label for="fixed2" class="fixed-label">Fix Section</label>
+         <div class="children">
+            <div class="child">Child1</div>
+            <div class="child">Child2</div>
+            <div class="menu child">Child3
+               <div class="children">
+                  <div class="child">Child1</div>
+                  <div class="child">Child2</div>
+                  <div class="child">Child1</div>
+                  <div class="child">Child2</div>
+                  <div class="child">Child1</div>
+                  <div class="child">Child2</div>
+                  <div class="child">Child1</div>
+                  <div class="child">Child2</div>
+                  <div class="menu child">Child3
+                     <div class="children">
+                        <div class="child">Child1</div>
+                        <div class="child">Child2</div>
+                        <div class="child">Child1</div>
+                        <div class="child">Child2</div>
+                        <div class="child">Child1</div>
+                        <div class="child">Child2</div>
+                        <div class="child">Child1</div>
+                        <div class="child">Child2</div>
+                        <div class="child">Child1</div>
+                        <div class="child">Child2</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="child">Some Child</div>
+      <div class="child">Some Child</div>
+      <div class="child">Some Child</div>
+   </div>
+</div>
+
+<script src="main.js"></script>
+<script src="heroDetail.js"></script>
+</body>
+</html>
