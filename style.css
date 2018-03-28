@@ -1,6 +1,19 @@
+body{
+    box-sizing: border-box;
+}
+
 .container{
     width: 25%;
     padding: 15px;
+   
+}
+
+.cl1{
+    color: orangered;
+}
+.cl2{
+    padding: 15px;
+
 }
 
 .menu{

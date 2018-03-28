@@ -1,0 +1,13 @@
+<button 
+    name="{{$ctrl.name}}" 
+    value="{{$ctrl.initialValue}}"
+    ng-disabled="$ctrl.isDisabled" 
+    ng-class="$ctrl.className.join(' ')" 
+    ng-click="click($event)" 
+    ng-blur="$ctrl.blur($event)" 
+    ng-focus="$ctrl.focus($event)" 
+    ng-keydown="$ctrl.keydown($event)" 
+    ng-keyup="$ctrl.keyup($event)">
+
+    <ng-transclude></ng-transclude>
+</button>

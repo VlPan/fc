@@ -1,0 +1,19 @@
+
+    <input 
+    type="{{$ctrl.inputType}}" 
+    name="{{$ctrl.name}}" 
+    placeholder="{{$ctrl.placeholder}}"
+    required="{{$ctrl.isRequired}}"
+    value="{{$ctrl.initialValue}}" 
+    ng-disabled="$ctrl.disabled" 
+    ng-minlength="$ctrl.minLengthInput" 
+    ng-maxlength="$ctrl.maxLengthInput" 
+    placeholder="{{$ctrl.placeholder}}" 
+    ng-model="model" 
+    ng-class="$ctrl.className.join(' ')" 
+    ng-change="change()" 
+    ng-click="click($event)" 
+    ng-blur="$ctrl.blur($event)" 
+    ng-focus="$ctrl.focus($event)" 
+    ng-keydown="$ctrl.keydown($event)" 
+    ng-keyup="$ctrl.keyup($event)"> 
